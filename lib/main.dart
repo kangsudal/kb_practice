@@ -45,35 +45,37 @@ class MyHomePage extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      height: appBarHeight + 100,
+                      height: appBarHeight,
                       color: Colors.yellow,
                     ),
-                    buildListViewHeader(
-                      tileColor: Colors.black,
-                      title: Text(
-                        'Tickers',
-                        style: TextStyle(
-                          color: Colors.white,
+                    Container(
+                      color: Colors.black,
+                      child: ListTile(
+                        tileColor: Colors.black,
+                        title: Text(
+                          'Tickers',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      trailing: Container(
-                        width: MediaQuery.of(context).size.width * 0.4,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Text(
-                              'Last price',
-                              style: TextStyle(
-                                color: Colors.white,
+                        trailing: Container(
+                          width: MediaQuery.of(context).size.width * 0.4,
+                          child: Row(
+                            children: [
+                              Text(
+                                'Last price',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            Text(
-                              '%Change',
-                              style: TextStyle(
-                                color: Colors.white,
+                              Text(
+                                '%Change',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -87,20 +89,6 @@ class MyHomePage extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  Container buildListViewHeader({required Color tileColor, required Text title, required Container trailing}) {
-    return Container(
-      height: 50,
-      color: tileColor,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          title,
-          trailing,
-        ],
       ),
     );
   }
