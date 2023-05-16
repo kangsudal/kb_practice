@@ -51,7 +51,7 @@ class MyHomePage extends StatelessWidget {
                     Container(
                       color: Colors.black,
                       child: ListTile(
-                        tileColor: Colors.black,
+                        // tileColor: Colors.black,
                         title: Text(
                           'Tickers',
                           style: TextStyle(
@@ -61,6 +61,7 @@ class MyHomePage extends StatelessWidget {
                         trailing: Container(
                           width: MediaQuery.of(context).size.width * 0.4,
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
                                 'Last price',
@@ -77,6 +78,45 @@ class MyHomePage extends StatelessWidget {
                             ],
                           ),
                         ),
+                      ),
+                    ),
+                    Expanded(
+                      child: ListView.separated(
+                        itemCount: 20,
+                        itemBuilder: (context, idx) {
+                          return ListTile(
+                            leading: Image.asset(
+                              'images/logo/stock_default.png',
+                              width: 45,
+                            ),
+                            title: Text('Ticker'),
+                            subtitle: Text('full name'),
+                            trailing: Container(
+                              width: MediaQuery.of(context).size.width * 0.4,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Last price',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Text(
+                                    '%Change',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        },
+                        separatorBuilder: (BuildContext context, int index) {
+                          return const Divider();
+                        },
                       ),
                     ),
                   ],

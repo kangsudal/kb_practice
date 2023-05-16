@@ -1,0 +1,112 @@
+﻿.blankImg {
+    background-image: url("../../images/blankImg.svg");
+    background-repeat: no-repeat !important;
+    background-color: inherit !important;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+}
+.blankSearchImg {
+    background-image: url("../../images/btnSearch.svg");
+    background-repeat: no-repeat !important;
+    background-color: inherit !important;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+}
+
+.stockImg {
+    background-image: url("../logo/stock_default.png");
+    background-repeat: no-repeat !important;
+    background-color: inherit !important;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+}
+
+.icon_stock {
+    background-image: url("./icon_stock.png");
+    background-repeat: no-repeat !important;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 36px;
+    width: 36px!important;
+    height: 100%!important;
+}
+
+.icon_kb {
+    background-image: url("./logo_20kb.png");
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: 20px;
+}
+
+
+/*****************************************/
+/* 은행이미지 관련 css */
+/*****************************************/
+.bankImg_Empty, .bankImg_{
+    background : url(../bank/oval.svg) no-repeat center; 
+}
+
+.bankImg_004  { background: url(../bank/img_36_bank_004.png) no-repeat center; background-size: contain;}
+.bankImg_039  { background: url(../bank/img_36_bank_039.png) no-repeat center; background-size: contain;}
+.bankImg_034  { background: url(../bank/img_36_bank_034.png) no-repeat center; background-size: contain;}
+.bankImg_003  { background: url(../bank/img_36_bank_003.png) no-repeat center; background-size: contain;}
+.bankImg_011  { background: url(../bank/img_36_bank_011.png) no-repeat center; background-size: contain;}
+.bankImg_031  { background: url(../bank/img_36_bank_031.png) no-repeat center; background-size: contain;}
+.bankImg_055  { background: url(../bank/img_36_bank_055.png) no-repeat center; background-size: contain;}
+.bankImg_060  { background: url(../bank/img_36_bank_060.png) no-repeat center; background-size: contain;}
+.bankImg_032  { background: url(../bank/img_36_bank_032.png) no-repeat center; background-size: contain;}
+.bankImg_061  { background: url(../bank/img_36_bank_061.png) no-repeat center; background-size: contain;}
+.bankImg_064  { background: url(../bank/img_36_bank_064.png) no-repeat center; background-size: contain;}
+.bankImg_002  { background: url(../bank/img_36_bank_002.png) no-repeat center; background-size: contain;}
+.bankImg_045  { background: url(../bank/img_36_bank_045.png) no-repeat center; background-size: contain;}
+.bankImg_007  { background: url(../bank/img_36_bank_007.png) no-repeat center; background-size: contain;}
+.bankImg_088  { background: url(../bank/img_36_bank_088.png) no-repeat center; background-size: contain;}
+.bankImg_048  { background: url(../bank/img_36_bank_048.png) no-repeat center; background-size: contain;}
+.bankImg_020  { background: url(../bank/img_36_bank_020.png) no-repeat center; background-size: contain;}
+.bankImg_071  { background: url(../bank/img_36_bank_071.png) no-repeat center; background-size: contain;}
+.bankImg_050  { background: url(../bank/img_36_bank_050.png) no-repeat center; background-size: contain;}
+.bankImg_037  { background: url(../bank/img_36_bank_037.png) no-repeat center; background-size: contain;}
+.bankImg_035  { background: url(../bank/img_36_bank_035.png) no-repeat center; background-size: contain;}
+.bankImg_067  { background: url(../bank/img_36_bank_067.png) no-repeat center; background-size: contain;}
+.bankImg_062  { background: url(../bank/img_36_bank_062.png) no-repeat center; background-size: contain;}
+.bankImg_063  { background: url(../bank/img_36_bank_063.png) no-repeat center; background-size: contain;}
+.bankImg_012  { background: url(../bank/img_36_bank_012.png) no-repeat center; background-size: contain;}
+.bankImg_090  { background: url(../bank/img_36_bank_090.png) no-repeat center; background-size: contain;}
+.bankImg_089  { background: url(../bank/img_36_bank_089.png) no-repeat center; background-size: contain;}
+.bankImg_081  { background: url(../bank/img_36_bank_081.png) no-repeat center; background-size: contain;}
+.bankImg_027  { background: url(../bank/img_36_bank_027.png) no-repeat center; background-size: contain;}
+.bankImg_054  { background: url(../bank/img_36_bank_054.png) no-repeat center; background-size: contain;}
+.bankImg_057  { background: url(../bank/img_36_bank_057.png) no-repeat center; background-size: contain;}
+.bankImg_023  { background: url(../bank/img_36_bank_023.png) no-repeat center; background-size: contain;}
+.bankImg_092  { background: url(../bank/img_36_stock_271.png) no-repeat center; background-size: contain;}
+.bankImg_218  { background: url(../bank/img_36_stock_218.png) no-repeat center; background-size: contain;}
+.bankImg_261  { background: url(../bank/img_36_stock_261.png) no-repeat center; background-size: contain;}
+.bankImg_267  { background: url(../bank/img_36_stock_267.png) no-repeat center; background-size: contain;}
+.bankImg_287  { background: url(../bank/img_36_stock_287.png) no-repeat center; background-size: contain;}
+.bankImg_238  { background: url(../bank/img_36_stock_238.png) no-repeat center; background-size: contain;}
+.bankImg_290  { background: url(../bank/img_36_stock_290.png) no-repeat center; background-size: contain;}
+.bankImg_240  { background: url(../bank/img_36_stock_240.png) no-repeat center; background-size: contain;}
+.bankImg_291  { background: url(../bank/img_36_stock_291.png) no-repeat center; background-size: contain;}
+.bankImg_278  { background: url(../bank/img_36_stock_278.png) no-repeat center; background-size: contain;}
+.bankImg_209  { background: url(../bank/img_36_stock_209.png) no-repeat center; background-size: contain;}
+.bankImg_280  { background: url(../bank/img_36_stock_280.png) no-repeat center; background-size: contain;}
+.bankImg_265  { background: url(../bank/img_36_stock_265.png) no-repeat center; background-size: contain;}
+.bankImg_288  { background: url(../bank/img_36_stock_288.png) no-repeat center; background-size: contain;}
+.bankImg_292  { background: url(../bank/img_36_stock_292.png) no-repeat center; background-size: contain;}
+.bankImg_264  { background: url(../bank/img_36_stock_264.png) no-repeat center; background-size: contain;}
+.bankImg_271  { background: url(../bank/img_36_stock_271.png) no-repeat center; background-size: contain;}
+.bankImg_270  { background: url(../bank/img_36_stock_270.png) no-repeat center; background-size: contain;}
+.bankImg_262  { background: url(../bank/img_36_stock_262.png) no-repeat center; background-size: contain;}
+.bankImg_243  { background: url(../bank/img_36_stock_243.png) no-repeat center; background-size: contain;}
+.bankImg_294  { background: url(../bank/img_36_stock_294.png) no-repeat center; background-size: contain;}
+.bankImg_269  { background: url(../bank/img_36_stock_269.png) no-repeat center; background-size: contain;}
+.bankImg_263  { background: url(../bank/img_36_stock_263.png) no-repeat center; background-size: contain;}
+.bankImg_224  { background: url(../bank/img_36_stock_224.png) no-repeat center; background-size: contain;}
+.bankImg_279  { background: url(../bank/img_36_stock_279.png) no-repeat center; background-size: contain;}
+.bankImg_225  { background: url(../bank/img_36_stock_225.png) no-repeat center; background-size: contain;}
+.bankImg_227  { background: url(../bank/img_36_stock_227.png) no-repeat center; background-size: contain;}
+.bankImg_247  { background: url(../bank/img_36_stock_247.png) no-repeat center; background-size: contain;}
+.bankImg_266  { background: url(../bank/img_36_stock_266.png) no-repeat center; background-size: contain;}
