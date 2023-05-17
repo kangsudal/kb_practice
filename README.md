@@ -1,4 +1,5 @@
 # stock_ranking
 
-![image](https://github.com/kangsudal/kb_practice/assets/32862869/eb0fe172-816a-4160-b2b8-314e6056102b)
-![image](https://github.com/kangsudal/kb_practice/assets/32862869/af951c1a-90a4-4e52-a916-27a7d86783a1)
+![image](https://github.com/kangsudal/kb_practice/assets/32862869/53277b12-52d7-4b42-b927-86642d9b50b6)
+![image](https://github.com/kangsudal/kb_practice/assets/32862869/36007d55-bfe7-4c31-bd68-26561c5f5ee6)
+
