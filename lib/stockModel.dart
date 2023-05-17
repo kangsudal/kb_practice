@@ -126,4 +126,10 @@ List<Map<String, dynamic>> dummyData = [
     'prc': 6000,
     'change': -9.09,
   },
+  {
+    'sb': '005930',
+    'ISNM': '삼성전자',
+    'prc': 65300,
+    'change': -0.31,
+  },
 ];

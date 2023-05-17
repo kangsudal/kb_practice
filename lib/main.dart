@@ -96,6 +96,12 @@ class MyHomePage extends StatelessWidget {
                             leading: Image.network(
                               stocks[idx].logo,
                               width: 45,
+                              errorBuilder: (context, error, stackTrace) {
+                                return Image.asset(
+                                  'images/logo/stock_default.png',
+                                  width: 45,
+                                );
+                              },
                             ),
                             title: Text(
                               stocks[idx].sb,
@@ -104,7 +110,12 @@ class MyHomePage extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            subtitle: Text(stocks[idx].ISNM,style: TextStyle(color: Colors.grey,),),
+                            subtitle: Text(
+                              stocks[idx].ISNM,
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
                             trailing: Container(
                               width: MediaQuery.of(context).size.width * 0.4,
                               child: Row(
@@ -129,7 +140,9 @@ class MyHomePage extends StatelessWidget {
                           );
                         },
                         separatorBuilder: (BuildContext context, int index) {
-                          return const Divider(color: Colors.grey,);
+                          return const Divider(
+                            color: Colors.grey,
+                          );
                         },
                       ),
                     ),
