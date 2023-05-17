@@ -1,11 +1,11 @@
-class Stock {
+class StockRankingModel {
   String logo; // 로고이미지
   String sb; //Ticker
   String ISNM; //풀네임
   int prc; //종가
   double change; //등락률
 
-  Stock({
+  StockRankingModel({
     required this.logo,
     required this.sb,
     required this.ISNM,
@@ -14,8 +14,9 @@ class Stock {
   });
 
   //map을 받아와 객체 생성
-  Stock.fromMap(Map<String, dynamic> map)
-      : logo = "https://fileserver.kbsec.com.vn/kbbuddy/logo_tickers_x3_png/${map['sb']}.png",
+  StockRankingModel.fromMap(Map<String, dynamic> map)
+      : logo =
+            "https://fileserver.kbsec.com.vn/kbbuddy/logo_tickers_x3_png/${map['sb']}.png",
         sb = map['sb'],
         ISNM = map['ISNM'],
         prc = map['prc'],
