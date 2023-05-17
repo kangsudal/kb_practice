@@ -1,16 +1,4 @@
 # stock_ranking
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/kangsudal/kb_practice/assets/32862869/eb0fe172-816a-4160-b2b8-314e6056102b)
+![image](https://github.com/kangsudal/kb_practice/assets/32862869/af951c1a-90a4-4e52-a916-27a7d86783a1)
