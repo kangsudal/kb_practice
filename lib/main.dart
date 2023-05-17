@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stock_ranking/stockModel.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,6 +38,8 @@ class MyHomePage extends StatelessWidget {
 
     List<Stock> stocks =
         dummyData.map((mapItem) => Stock.fromMap(mapItem)).toList();
+
+    NumberFormat myFormat = NumberFormat.decimalPattern('en_us');
 
     return SafeArea(
       child: Scaffold(
@@ -109,7 +112,7 @@ class MyHomePage extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    stocks[idx].prc.toString(),
+                                    myFormat.format(stocks[idx].prc),
                                     style: TextStyle(
                                       color: Colors.white,
                                     ),

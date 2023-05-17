@@ -15,7 +15,7 @@ class Stock {
 
   //map을 받아와 객체 생성
   Stock.fromMap(Map<String, dynamic> map)
-      : logo = "https://fileserver.kbsec.com.vn/kbbuddy/logo_tickers_x3_png/${map['sb']}.png"??,
+      : logo = "https://fileserver.kbsec.com.vn/kbbuddy/logo_tickers_x3_png/${map['sb']}.png",
         sb = map['sb'],
         ISNM = map['ISNM'],
         prc = map['prc'],
