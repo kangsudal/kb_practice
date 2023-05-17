@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:stock_ranking/stockModel.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +34,10 @@ class MyHomePage extends StatelessWidget {
       'Large-cap',
     ];
     double appBarHeight = 100;
+
+    List<Stock> stocks =
+        dummyData.map((mapItem) => Stock.fromMap(mapItem)).toList();
+
     return SafeArea(
       child: Scaffold(
         body: Stack(
@@ -41,12 +46,12 @@ class MyHomePage extends StatelessWidget {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height,
-                color: Colors.green,
+                // color: Colors.green,
                 child: Column(
                   children: [
                     Container(
                       height: appBarHeight,
-                      color: Colors.yellow,
+                      // color: Colors.yellow,
                     ),
                     Container(
                       color: Colors.black,
@@ -82,15 +87,21 @@ class MyHomePage extends StatelessWidget {
                     ),
                     Expanded(
                       child: ListView.separated(
-                        itemCount: 20,
+                        itemCount: stocks.length,
                         itemBuilder: (context, idx) {
                           return ListTile(
-                            leading: Image.asset(
-                              'images/logo/stock_default.png',
+                            leading: Image.network(
+                              stocks[idx].logo,
                               width: 45,
                             ),
-                            title: Text('Ticker'),
-                            subtitle: Text('full name'),
+                            title: Text(
+                              stocks[idx].sb,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            subtitle: Text(stocks[idx].ISNM,style: TextStyle(color: Colors.grey,),),
                             trailing: Container(
                               width: MediaQuery.of(context).size.width * 0.4,
                               child: Row(
@@ -98,13 +109,13 @@ class MyHomePage extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    'Last price',
+                                    stocks[idx].prc.toString(),
                                     style: TextStyle(
                                       color: Colors.white,
                                     ),
                                   ),
                                   Text(
-                                    '%Change',
+                                    '${stocks[idx].change.toString()}%',
                                     style: TextStyle(
                                       color: Colors.white,
                                     ),
@@ -115,7 +126,7 @@ class MyHomePage extends StatelessWidget {
                           );
                         },
                         separatorBuilder: (BuildContext context, int index) {
-                          return const Divider();
+                          return const Divider(color: Colors.grey,);
                         },
                       ),
                     ),
@@ -152,7 +163,7 @@ class TabBarAppBar extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width,
         height: appBarHeight,
-        color: Colors.purple, //Colors.transparent,
+        // color: Colors.purple, //Colors.transparent,
         child: Column(
           children: [
             Padding(
